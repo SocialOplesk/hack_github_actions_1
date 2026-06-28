@@ -37,8 +37,8 @@
 
 3. Debes crear aplicar los ajustes necesarios
 
-4. Cuando ejecutas multiples comandos con el tag "- run" de forma consecutiva,<br/>
-   es posibles si aplicas el tag "- name" una sola vez
+4. Buscar el detalle oculto que no permite ejecutar el script del hack-2
+
 
 ```
 💡tips
@@ -81,11 +81,12 @@ steps:
     run: whoami       # ← El run que acompaña al step - name
 
 
+
 ✅ Forma correcta de usar name: con varios comandos en un solo step
 
 steps:
   - name: Comandos Linux
-    run: |
+    run: |    # ← La barra conocida como "pipe" permite encadenar comandos en el step run
       whoami
       pwd
       date
@@ -93,7 +94,9 @@ steps:
       echo "Varios comandos en un solo step"
       ls -la
 
+
 ✅ Forma correcta de usar un step:
+
    Cada - run: es un step completo y válido, aunque no tenga name <br/>
    El name es opcional, si no lo pones, GitHub usa el comando como nombre por defecto
 
@@ -116,6 +119,7 @@ jobs:
   comandos:
     runs-on: ubuntu-latest
     steps:
+      - name: comandos
       - run: whoami
       - run: pwd
       - run: date
