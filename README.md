@@ -36,7 +36,7 @@
 
 1. Crear un directorio el archivo flow.yml en un repositorio
 
-2. Dentro del flow.yml pegar eL script
+2. Dentro del flow.yml pegar el script
 
 3. Debes crear aplicar los ajustes necesarios
 
@@ -97,7 +97,7 @@ jobs:
 
 1. Crear un directorio el archivo flow.yml en un repositorio
 
-2. Dentro del flow.yml pegar eL script
+2. Dentro del flow.yml pegar el script
 
 3. Debes crear aplicar los ajustes necesarios
 
@@ -150,7 +150,7 @@ jobs:
 
 1. Crear un directorio el archivo flow.yml en un repositorio
 
-2. Dentro del flow.yml pegar eL script
+2. Dentro del flow.yml pegar el script
 
 3. Debes crear aplicar los ajustes necesarios
 
@@ -205,16 +205,24 @@ jobs:
 
 📁hack_gh_4/
 ├── .github/workflows/flow.yml
+├── data.json
+├── server.py
+├── README.md
 
 ```
 
+
 1. Crear un directorio el archivo flow.yml en un repositorio
 
-2. Dentro del flow.yml pegar eL script
+2. Dentro del flow.yml pegar el script
+   
+3. Crear los archivos data.json & server.py & README.md 
 
-3. Debes crear aplicar los ajustes necesarios
+4. Dentro del flow.yml pegar el script
 
-4. Ejecutar el workflow con el evento push
+5. Debes crear aplicar los ajustes necesarios
+
+6. Ejecutar el workflow con el evento push
 
 ```
 💡tips
@@ -286,7 +294,7 @@ jobs:
 
 1. Crear un directorio el archivo flow.yml en un repositorio
 
-2. Dentro del flow.yml pegar eL script
+2. Dentro del flow.yml pegar el script
 
 3. Debes crear aplicar los ajustes necesarios
 
