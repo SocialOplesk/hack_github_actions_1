@@ -21,6 +21,7 @@
 | H-2      | comandos linux |
 | H-3      | detectar eventos |
 | H-4      | condiciones |
+| H-5      | uses |
 <br/> 
 
 
@@ -335,7 +336,7 @@ jobs:
 
 
 ✅ Genera un archivo ".zip" descargable con todo el contenido del proyecto.
- - name: Crear artefacto con el proyecto
+ - name: Descargar proyecto
    uses: actions/upload-artifact@v4
      with:
        name: mi-proyecto-completo   # ← Nombre del artefacto (verás este nombre al descargar)     
@@ -352,7 +353,7 @@ jobs:
 
 ```yaml
 
-name: 05 - Descargar repositorio
+name: Descargar repositorio
 on: [❓]
 
 jobs:
@@ -363,12 +364,13 @@ jobs:
         uses: ❓
       - run: ls -la
 
-      - name: Crear artefacto con el proyecto
-        uses: actions/upload-artifact@v4
+      - name: Descargar proyecto
+        uses: ❓
         with:
-          name: mi-proyecto-completo       
+          name: ❓       
           path: .                          
           retention-days: 7    
+```
 
 <br />
 <br />
