@@ -251,7 +251,7 @@ jobs:
        path: .                      # ← Qué archivos incluir (. = todo el proyecto)     
        retention-days: 7            # ← Cuántos días estará disponible para descargar
 
- En el run puedes busar una url como la del ejemplo y al dar click descargar el proyecto
+ En el run puedes buscar una url como la del ejemplo y al dar click descargar el proyecto
  output =>  Artifact download URL: https://github.com/...
 
 ```
